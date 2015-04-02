@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>中文分词模块在线演示</title>
+<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+<script src="/assets/jquery.js"></script>
+<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<style>
+
+.segment-status{
+  margin: 10px 0;
+}
+
+.word {
+  background-color: #EEE;
+  margin: 2px;
+  line-height: 2;
+  display: inline-block;
+  padding: 0px 4px;
+}
+.word-0 {
+  background-color: #FFE4C4;
+}
+.word-1 {
+  background-color: #FFF;
+  color: #00F;
+}
+.word-16 {
+  font-weight: bold;
+}
+.word-2048 {
+  background-color: #FFF;
+  color: #BBB;
+}
+
+footer {
+  margin: 20px 0;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <h3>中文分词模块在线演示 <a class="btn btn-primary btn-default" href="https://github.com/leizongmin/node-segment" target="_blank" role="button">Fork me on GitHub</a></h3>
+    <hr>
+    <form>
+      <div class="form-group">
+        <label for="ipt-text">分词内容</label>
+        <textarea class="form-control" id="ipt-text" placeholder="分词内容" rows="15">CNode 社区为国内最专业的 Node.js 开源技术社区，致力于 Node.js 的技术研究。
+CNode 社区由一批热爱 Node.js 技术的工程师发起，目前已经吸引了互联网各个公司的专业技术人员加入，我们非常欢迎更多对 Node.js 感兴趣的朋友。
+CNode 的 SLA 保证是，一个9，即 90.000000%。
+社区目前由 @alsotang 在维护，有问题请联系：https://github.com/alsotang
+请关注我们的官方微博：http://weibo.com/cnodejs
+
+Nodeclub 是使用 Node.js 和 MongoDB 开发的社区系统，界面优雅，功能丰富，小巧迅速， 已在Node.js 中文技术社区 CNode(http://cnodejs.org) 得到应用，但你完全可以用它搭建自己的社区。
+
+本书通过大量实例讲解了Node.js 在实战开发中的应用，涉及Node.js 常用框架、非关系型数据库、关系型数据库、运维命令和网络安全等内容。章节按照从简单到复杂的难度排序，每一章都通过一个有趣的实例指引读者从头开发一个应用，让读者可以循序渐进地学习Node.js，以及在实际开发中的编程技巧。本书面向的是有一定Node.js 基础的读者，建议读者把本书当作入门书和进阶书之间的过渡书籍来阅读。当然，本书也适合那些有其他服务器编程语言基础，并且想尝试Node.js 新鲜技术的人阅读。
+
+包括250多个来自 Glyphicon Halflings 的字体图标。Glyphicons Halflings 一般是收费的，但是他们的作者允许 Bootstrap 免费使用。为了表示感谢，希望你在使用时尽量为 Glyphicons 添加一个友情链接。
+
+XSS是一个用于对用户输入的内容进行过滤，以避免遭受XSS攻击的模块 （什么是XSS攻击？）。主要用于论坛、博客、网上商店等等一些可允许用户录入页面排版、 格式控制相关的HTML的场景，xss模块通过白名单来控制允许的标签及相关的标签属性， 另外还提供了一系列的接口以便用户扩展，比其他同类模块更为灵活。
+
+据观察者报道：今日，国内著名的航空航天技术论坛《航空航天港》微博发文简介了国内前期方案论证的新一代载人飞船。这篇博文内容来源于《航空学报》的一篇公开论文《新一代多用途载人飞船概念研究》，由中国空间技术研究院载人航天总体部写作。可以视为中国首次公开新一代载人飞船的概况信息。
+据文章透露，中国新一代载人飞船将有两种型号，分别适应不同的任务需求，其中全重20吨的飞船可支持登月任务，14吨的飞船则可支持近地轨道、小行星和火星任务，此外也可兼顾近地空间站运输需求。该飞船具备一系列先进特性，如部分可重复使用、黑障通信、自备动力逃逸技术。此外，该飞船的回收方式将从目前神舟飞船的陆上回收为主改为海上回收为主，可实现第二宇宙速度下再入大气层。这些特性意味着中国新一代载人飞船的技术水平不亚于美国“猎户座”或“龙”飞船，将成为中国未来宇航员的主要“座驾”。论文中列出国外载人宇航任务示意，可见都已经不再采用“土星5号”尺寸的超级火箭将宇航员和登月舱等一起送入轨道的设计，而是用重型火箭和载人火箭分别将宇航员和登月舱送入轨道，对接后飞往月球，甚至火星的方式。
+据上述论文描述，目前我国只有长征2F一种载人火箭，经适应性改造后长征5和长征7火箭也可用于发射载人飞船。由于新一代载人飞船技术指标高于“神舟”飞船，整船重量也将显著增加，长征2F火箭已不能满足新一代载人飞船的发射要求。初步分析，经适应性改造后长征5和长征7火箭发射新一代载人飞船进入近地轨道的能力分别为14吨和20吨。
+对应于两种运载火箭(长征5号和长征7号)的新一代载人飞船重量分别为14吨和20吨，飞船采用模块化设计，两飞船返回舱完全相同，推进舱携带不同重量的推进剂以适应不同任务需求。
+</textarea>
+      </div>
+      <button type="button" class="btn btn-primary btn-xs do-segment">分词</button>
+    </form>
+    <hr>
+    <div class="segment-status"></div>
+    <hr>
+    <div class="segment-results"></div>
+    <hr>
+    <footer>
+      Powered by <a href="http://ucdok.com">老雷实验室</a>
+    </footer>
+  </div>
+</body>
+</html>
+<script>
+
+$('.do-segment').click(function () {
+  var $btn = $(this);
+  var text = $('#ipt-text').val().trim();
+  $btn.button('loading');
+  $.post('/do_segment', {text: text}, function (d) {
+    $btn.button('reset');
+    console.log(d);
+    displayResults(d);
+  });
+});
+
+setTimeout(function () {
+  $('.do-segment').click();
+}, 500);
+
+function displayResults (data) {
+  var html = '';
+  data.words.forEach(function (w) {
+    html += '<span class="word word-' + w.p + '">' + w.w + '</span>';
+  });
+  $('.segment-results').html(html);
+  var speed = parseInt(data.text.length / data.spent * 1000, 10);
+  $('.segment-status').text('本次分词' + data.text.length + '字，耗时' + data.spent + '毫秒，速度' + speed + '字/秒');
+}
+
+</script>

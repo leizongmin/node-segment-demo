@@ -1,0 +1,25 @@
+{
+  "name": "segment-demo",
+  "version": "1.0.0",
+  "description": "online demo for segment package",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leizongmin/node-segment-demo.git"
+  },
+  "author": "Zongmin Lei <leizongmin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leizongmin/node-segment-demo/issues"
+  },
+  "homepage": "https://github.com/leizongmin/node-segment-demo",
+  "dependencies": {
+    "body-parser": "^1.12.2",
+    "express": "^4.12.3",
+    "segment": "0.0.6",
+    "serve-static": "^1.9.2"
+  }
+}
